@@ -25,7 +25,7 @@ void main() {
   print(transformedWelcome);
   //8
   const String welcome2 = "Hello, World !";
-  const List words = ["Hello", "World"];
+  final List<String> words = List.unmodifiable(welcome2.split(' '));
   //9
   String pwd = "superMotDePasse";
   print(pwd.isEmpty ? "Mot de passe manquant" : "Mot de passe fourni");
